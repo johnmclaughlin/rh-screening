@@ -1,0 +1,78 @@
+body {
+    font-family: 'Overpass', arial, helvetica, sans-serif;
+    font-size: 16px;
+    background-image:
+        radial-gradient(
+            circle at top center,
+            #ededed,
+            #bbb,
+            #ededed
+        );
+}
+
+.box {
+    background: white;
+    height: 57%; /* 695 396 */
+    width: 49%; /* 1140 555 */
+    margin: 20% auto 0;
+    border: 1px solid white;
+}
+
+.header {
+    background: linear-gradient(
+      #c00, #470000
+    );
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: normal;
+}
+
+.tab {
+    padding: 1em;
+    border-left: 1px solid white;
+}
+
+.tab.active, .tab:hover {
+    background-image:
+        radial-gradient(
+            circle,
+            #c00,
+            #470000
+        );
+}
+
+.content {
+    margin: 1.25em;
+    font-size: 0.75em
+}
+
+.content .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li span {
+    width: 150px;
+    display: inline-block;
+}
+
