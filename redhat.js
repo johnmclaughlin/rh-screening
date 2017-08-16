@@ -1,13 +1,11 @@
-let test = {};
-
-test.remoteMathService = function(cb) {
+function   remoteMathService (cb) {
     var  one, two; 
 
-    test.callOneService( function (err, num) {
+    callOneService( function (err, num) {
         one  =  num; 
     });
 
-    test.callTwoService( function (err, num) { 
+    callTwoService( function (err, num) { 
         two  =  num;
     });
 
@@ -16,19 +14,19 @@ test.remoteMathService = function(cb) {
     },  2000 );
 }
 
-test.callOneService = function(cb) {  
+function   callOneService (cb) {  
     setTimeout ( function () {
         return  cb( undefined ,  1 ); 
     },  1000 );
 }
 
-test.callTwoService = function(cb) {  
+function   callTwoService (cb) {  
     setTimeout ( function () {
         return  cb( undefined ,  2 ); 
     },  1500 );
 }
 
-test.remoteMathService( function (err, answer) {  
+remoteMathService( function (err, answer) {  
     if  (err)  console .log ( "error " , err);
     if  (answer  !==   3 ) {
         console .log ( "wrong answer" , answer); 
@@ -37,8 +35,3 @@ test.remoteMathService( function (err, answer) {
     }
 });
 
-test.trial = function (a){
-    return a*10;
-}
-
-module.exports = test;
