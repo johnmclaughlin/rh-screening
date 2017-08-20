@@ -12,7 +12,11 @@ test.remoteMathService = function(cb) {
     });
 
     setTimeout ( function () {
-    return  cb( undefined , one  +  two); 
+        console.log(one+two);
+        console.log('hey');
+        console.log(cb( undefined , one  +  two));
+        return  cb( undefined , one  +  two); 
+
     },  2000 );
 }
 
