@@ -1,16 +1,16 @@
 
-let test = require('../redhat.js')
+let test = require('../mathService.js')
 let assert = require('assert');
 describe('Remote Math Service', function() {
   describe('Call One Service', function() {
     it('should return 1', function(done) {
-        assert.equal(1, test.callOneService());
+        assert.equal(1, test.callOneService(cb));
         done();
     });
   });
   describe('Call Two Service', function() {
     it('should return 2', function(done) {
-        assert.equal(2, test.callTwoService());
+        assert.equal(2, test.callTwoService(cb));
         done();
     });
   });
