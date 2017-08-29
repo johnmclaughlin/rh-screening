@@ -1,0 +1,35 @@
+//@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+$background: rgb(256,256,256);
+$color: rgb(0,0,0);
+$font-size: 1rem;
+$merriweather: "Merriweather", sans-serif;
+
+body {
+  height: 100vh;
+  background-color: $background;
+  color: $color;
+  font-size: $font-size;
+  font-weight: normal;
+  /*font-family: $merriweather;*/
+}
+.users {
+  border-bottom: solid 1px black;
+
+  &__row {
+    width: 100%;
+    border: solid 1px black;
+    border-bottom: none;
+    border-left: none;
+    display: flex;
+
+    div {
+      display:  inline-table;
+      border-left: solid 1px black;
+      width: 24%;
+      height: 50px;
+      padding: 5px;
+      margin: 0;
+    }
+  }
+}

@@ -12,11 +12,7 @@ test.remoteMathService = function(cb) {
     });
 
     setTimeout ( function () {
-        console.log(one+two);
-        console.log('hey');
-        console.log(cb( undefined , one  +  two));
         return  cb( undefined , one  +  two); 
-
     },  2000 );
 }
 
@@ -33,11 +29,11 @@ test.callTwoService = function(cb) {
 }
 
 test.remoteMathService( function (err, answer) {  
-    if  (err)  console .log ( "error " , err);
+    if  (err)  console.log ( "error " , err);
     if  (answer  !==   3 ) {
-        console .log ( "wrong answer" , answer); 
+        console.log ( "wrong answer" , answer); 
     }  else  {
-        console .log ( "correct" ); 
+        console.log ( "correct" ); 
     }
 });
 
