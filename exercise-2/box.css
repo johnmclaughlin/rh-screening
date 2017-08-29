@@ -19,7 +19,7 @@ body {
     border: 1px solid white;
 }
 
-.header {
+.box__header {
     background: linear-gradient(
       #c00, #470000
     );
@@ -27,17 +27,17 @@ body {
     font-size: 1em;
 }
 
-.header__title {
+.box__header--title {
     position: absolute;
     padding: 0.625em 1.25em;
     font-weight: 700;
 }
 
-.header__links {
+.box__header--tabs {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
+
 }
 
 .tab {
@@ -56,13 +56,13 @@ body {
     color: rgba(255,255,255,1);
 }
 
-.content {
+.box__content {
     margin: 1.25em;
 }
 
-.content .title {
+.box__content--title {
     font-size: 1.5em;
-    
+
 }
 
 ul {
@@ -85,4 +85,3 @@ li span.active {
     padding: 0 .5em;
     font-weight: 200;
 }
-
