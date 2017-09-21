@@ -15,7 +15,12 @@ let config = {
             {
                 test: /\.js$/, // files ending with .js
                 exclude: /node_modules/, // exclude the node_modules directory
-                loader: "babel-loader" // use this (babel-core) loader
+                loader: "babel-loader", // use this (babel-core) loader
+                include: [
+                  path.resolve(__dirname, './src'),
+                  // webpack-dev-server#1090 for Safari
+                  /node_modules\/webpack-dev-server/
+                ]
             },
             {
                 test: /\.scss$/, //all files starting with .scss
