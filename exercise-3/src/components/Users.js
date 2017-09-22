@@ -7,8 +7,8 @@ import User from './User'
 // depending on the full pathname
 const Users = () => (
   <Switch>
-    <Route exact path='/users' component={AllUsers}/>
-    <Route path='/users/:id' component={User}/>
+    <Route exact path='/' component={AllUsers}/>
+    <Route path='/:id' component={User}/>
   </Switch>
 )
 
